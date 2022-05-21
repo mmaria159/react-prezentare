@@ -1,25 +1,26 @@
 import './App.css';
 import Actions from './components/Actions';
+import Button from './components/Button';
 
 function App() {
   return (
-        <div class="section-1">
-           <div class="display">
-             <div class="counter-value" id="counter-value">
+        <div className="section-1">
+           <div className="display">
+             <div className="counter-value" id="counter-value">
                 0
              </div>
            </div>
             <Actions style='actions-v1'>
-               <button class="plus" id="plus">Plus</button>
-               <button class="minus" id="minus">Minus</button>
+                <Button style="plus">Plus</Button>
+                <Button style="minus">Minus</Button>
             </Actions>
             <Actions style='actions-v2'>
-                <button class="multiply" id="multiply">Multiply</button>
-                <button class="divide" id="divide">Divide</button>
+                <Button style="multiply">Multiply</Button>
+                <Button style="divide">Divide</Button>
             </Actions>
             <Actions style='actions-v3'>
-                <button class="test1" id="test1">Test 1</button>
-                <button class="test2" id="test2">Test 2</button>
+                <Button>Test 1</Button>
+                <Button>Test 2</Button>
             </Actions>
         </div>
   );
