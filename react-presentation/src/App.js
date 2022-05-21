@@ -1,25 +1,24 @@
+import React from 'react'
 import './App.css';
 import Actions from './components/Actions';
 import Button from './components/Button';
 
 function App() {
-  let count = 0;
+  const [count, setCount] = React.useState(0);
 
   function plusHandler () {
-    count++;
-    console.log(count);
+    setCount(prevCount => prevCount + 1);
   }
 
   function minusHandler () {
-    count--;
-    console.log(count);
+    setCount(prevCount => prevCount - 1);
   }
 
   return (
         <div className="section-1">
            <div className="display">
              <div className="counter-value" id="counter-value">
-                0
+                {count}
              </div>
            </div>
             <Actions style='actions-v1'>
