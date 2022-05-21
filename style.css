@@ -1,0 +1,37 @@
+.section-1 {
+    margin: 0 300px;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+}
+
+.counter-value {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.actions > button {
+    margin: 0 10px;
+    width: 100px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 10%;
+    font-size: 20px;
+}
+
+.plus {
+    background-color: aqua;
+}
+
+.minus {
+    background-color: rgb(255, 89, 0);
+}

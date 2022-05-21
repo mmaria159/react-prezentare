@@ -1,0 +1,31 @@
+<div class="actions">
+	<button class="multiply" id="multiply">Multiply</button>
+	<button class="divide" id="divide">Divide</button>
+</div>
+
+.multiply {
+    background-color: rgb(0, 140, 255);
+}
+
+.divide {
+    background-color: rgb(0, 255, 17);
+}
+
+console.log(plus) 
+console.log(minus)
+
+const multiply = document.querySelector("#multiply");
+const divide = document.querySelector("#divide");
+
+multiply.addEventListener("click", multiplyHandler);
+divide.addEventListener("click", divideHandler);
+
+function multiplyHandler() {
+    count = count * by;
+    updateCounter()
+}
+
+function divideHandler() {
+    count = count / by;
+    updateCounter()
+}
