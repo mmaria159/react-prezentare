@@ -12,6 +12,10 @@ function App() {
                <button class="plus" id="plus">Plus</button>
                <button class="minus" id="minus">Minus</button>
            </div>
+           <div class="actions">
+              <button class="multiply" id="multiply">Multiply</button>
+              <button class="divide" id="divide">Divide</button>
+          </div>
         </div>
   );
 }
