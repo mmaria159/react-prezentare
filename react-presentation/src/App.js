@@ -3,6 +3,18 @@ import Actions from './components/Actions';
 import Button from './components/Button';
 
 function App() {
+  let count = 0;
+
+  function plusHandler () {
+    count++;
+    console.log(count);
+  }
+
+  function minusHandler () {
+    count--;
+    console.log(count);
+  }
+
   return (
         <div className="section-1">
            <div className="display">
@@ -11,16 +23,8 @@ function App() {
              </div>
            </div>
             <Actions style='actions-v1'>
-                <Button style="plus">Plus</Button>
-                <Button style="minus">Minus</Button>
-            </Actions>
-            <Actions style='actions-v2'>
-                <Button style="multiply">Multiply</Button>
-                <Button style="divide">Divide</Button>
-            </Actions>
-            <Actions style='actions-v3'>
-                <Button>Test 1</Button>
-                <Button>Test 2</Button>
+                <Button style="plus" onClickHandler={plusHandler}>Plus</Button>
+                <Button style="minus" onClickHandler={minusHandler}>Minus</Button>
             </Actions>
         </div>
   );

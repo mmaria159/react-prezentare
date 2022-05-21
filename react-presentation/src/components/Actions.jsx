@@ -3,7 +3,7 @@ import './Actions.css'
 
 const Actions = (props) => {
     return (
-        <div class={props.style}>
+        <div className={props.style}>
             {props.children}
         </div>
     );
