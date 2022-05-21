@@ -14,6 +14,14 @@ function App() {
     setCount(prevCount => prevCount - 1);
   }
 
+  function multiplyHandler () {
+    setCount(prevCount => prevCount * 2);
+  }
+
+  function divideHandler () {
+    setCount(prevCount => prevCount / 2);
+  }
+
   return (
         <div className="section-1">
            <div className="display">
@@ -24,6 +32,8 @@ function App() {
             <Actions style='actions-v1'>
                 <Button style="plus" onClickHandler={plusHandler}>Plus</Button>
                 <Button style="minus" onClickHandler={minusHandler}>Minus</Button>
+                <Button style="multiply" onClickHandler={multiplyHandler}>Multiply</Button>
+                <Button style="divide" onClickHandler={divideHandler}>Divide</Button>
             </Actions>
         </div>
   );
