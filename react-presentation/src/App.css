@@ -13,12 +13,6 @@
   font-weight: 700;
 }
 
-.actions {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
 .actions > button {
   margin: 0 10px;
   width: 100px;

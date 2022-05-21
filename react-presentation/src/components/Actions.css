@@ -1,0 +1,17 @@
+.actions-v1 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.actions-v2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions-v3 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}

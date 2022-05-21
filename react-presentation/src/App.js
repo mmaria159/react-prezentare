@@ -1,4 +1,5 @@
 import './App.css';
+import Actions from './components/Actions';
 
 function App() {
   return (
@@ -8,14 +9,18 @@ function App() {
                 0
              </div>
            </div>
-           <div class="actions">
+            <Actions style='actions-v1'>
                <button class="plus" id="plus">Plus</button>
                <button class="minus" id="minus">Minus</button>
-           </div>
-           <div class="actions">
-              <button class="multiply" id="multiply">Multiply</button>
-              <button class="divide" id="divide">Divide</button>
-          </div>
+            </Actions>
+            <Actions style='actions-v2'>
+                <button class="multiply" id="multiply">Multiply</button>
+                <button class="divide" id="divide">Divide</button>
+            </Actions>
+            <Actions style='actions-v3'>
+                <button class="test1" id="test1">Test 1</button>
+                <button class="test2" id="test2">Test 2</button>
+            </Actions>
         </div>
   );
 }
